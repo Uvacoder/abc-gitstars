@@ -35,7 +35,7 @@ const reposReducer = (state: State = initialState, action: Action): State => {
             return { ...state, status: "error", error: action.payload.error }
         case FILTER:
             if (action.payload.term === "") return { ...state, repos: state.original }
-            return { ...state, repos: state.original.filter(x => x.name?.includes(action.payload.term) || x.description?.includes(action.payload.term)) }
+            return { ...state, repos: state.original.filter(x => x.name?.toUpperCase().includes(action.payload.term.toUpperCase()) || x.description?.toUpperCase().includes(action.payload.term.toUpperCase())) }
         default:
             return state;
     }
