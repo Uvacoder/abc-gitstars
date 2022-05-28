@@ -1,6 +1,6 @@
 # Github most starred repos
 
-![demo](./screenshot-abc-gitstars.png)
+![demo](./abc-gitstars.png)
 
 Shows most starred repos 
 
