@@ -1,5 +1,7 @@
 # Github most starred repos
 
+![demo](./screenshot-abc-gitstars.png)
+
 Shows most starred repos 
 
 ## Getting started
